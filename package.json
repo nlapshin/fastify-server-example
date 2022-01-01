@@ -1,0 +1,23 @@
+{
+  "name": "fastify-server-example",
+  "version": "1.0.0",
+  "description": "Simple fastify server with validation, serialization and documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlapshin/fastify-server-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlapshin/fastify-server-example/issues"
+  },
+  "homepage": "https://github.com/nlapshin/fastify-server-example#readme",
+  "dependencies": {
+    "fastify": "^3.25.3"
+  }
+}
