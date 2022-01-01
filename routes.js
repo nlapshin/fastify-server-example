@@ -4,6 +4,15 @@ module.exports = (fastify) => {
   fastify.route({
     method: 'GET',
     url: '/like/count',
+    schema: {
+      querystring: {
+        type: 'object',
+        required: ['username'],
+        properties: {
+          username: { type: 'string' }
+        }
+      }
+    },
     handler(request, reply) {
       const { query } = request
       const { username } = query
@@ -16,6 +25,15 @@ module.exports = (fastify) => {
   fastify.route({
     method: 'POST',
     url: '/like/inc',
+    schema: {
+      body: {
+        type: 'object',
+        required: ['username'],
+        properties: {
+          username: { type: 'string' }
+        }
+      }
+    },
     handler(request, reply) {
       const { body } = request
       const { username } = body
